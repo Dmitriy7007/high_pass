@@ -1,0 +1,62 @@
+@import "_variables.scss";
+
+.section-about {
+  padding-top: 30px;
+  padding-bottom: 67px;
+  color: $colorWhite;
+  background-color: $backgroundDark;
+  &__container {
+    align-items: flex-end;
+  }
+  &__heading {
+    margin: 0;
+    margin-bottom: 5px;
+    font-family: TTFirsNeue;
+    font-weight: bold;
+    font-size: 24px;
+    line-height: 31px;
+  }
+  &__img {
+    margin-bottom: 20px;
+    width: 100%;
+    height: 255px;
+    object-fit: cover;
+  }
+  &__descr {
+    line-height: 28px;
+  }
+  &__form {
+    width: 100%;
+  }
+  &__form div {
+    display: flex;
+    flex-wrap: nowrap;
+  }
+  &__label {
+    margin-bottom: 16px;
+    display: block;
+    font-family: TTFirsNeue;
+    font-size: 24px;
+    line-height: 22px;
+  }
+  &__input {
+    margin: 0;
+    padding-left: 23px;
+    border: none;
+    width: 100%;
+    height: 50px;
+    font-family: inherit;
+    font-size: inherit;
+    line-height: inherit;
+    color: $colorWhite;
+    background-color: #4a4a4a;
+  }
+  &__input::placeholder {
+    color: #cacaca;
+  }
+  &__btn {
+    @include btnOrange();
+    margin-left: 30px;
+    cursor: pointer;
+  }
+}

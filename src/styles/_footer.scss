@@ -1,0 +1,50 @@
+@import "_variables.scss";
+@import "_fonts.scss";
+@import "_mixin.scss";
+
+.footer {
+  background-color: $backgroundDark;
+  &__container {
+    min-height: 106px;
+  }
+  &__text {
+    padding-right: 35px;
+    margin: 0;
+    line-height: 22px;
+    color: #cacaca;
+  }
+  &__text-grey {
+    line-height: 22px;
+    color: $colorDateGrey;
+  }
+  .social__list {
+    justify-content: center;
+  }
+  .logo {
+    margin-bottom: 6px;
+  }
+}
+
+.social__descr {
+  margin: 0;
+  margin-bottom: 8px;
+  line-height: 22px;
+  color: #cacaca;
+}
+
+.footer-grid__item:nth-child(-n + 2) {
+  display: flex;
+  justify-content: center;
+  flex-direction: column;
+}
+
+.logo__descr {
+  font-size: 14px;
+  line-height: 18px;
+  color: #e9e9e9;
+}
+
+.footer-grid__item:nth-child(3) {
+  display: flex;
+  align-items: center;
+}

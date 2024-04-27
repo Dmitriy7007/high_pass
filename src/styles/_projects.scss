@@ -1,0 +1,84 @@
+@import "_variables.scss";
+@import "_mixin.scss";
+
+.section-projects {
+  padding-top: 72px;
+  padding-bottom: 72px;
+  &__heading {
+    @include headingDark;
+    margin-bottom: 15px;
+  }
+  &__list {
+    @include listStyle();
+  }
+  &__card {
+    position: relative;
+  }
+  &__btn {
+    @include btnFrameOrange();
+    margin-top: auto;
+    margin-right: auto;
+  }
+}
+
+.card {
+  &__hashtag {
+    @include hashCategory();
+  }
+  &__descr {
+    display: -webkit-box;
+    margin-bottom: 10px;
+    overflow: hidden;
+    line-height: 22px;
+    -webkit-line-clamp: 3;
+    -webkit-box-orient: vertical;
+  }
+  &__descr-2 {
+    max-width: 292px;
+    line-height: 22px;
+  }
+  &__img {
+    margin-bottom: 13px;
+    height: 184px;
+  }
+  &__img-3 {
+    object-fit: cover;
+  }
+  &__date {
+    @include cardDate();
+    padding-left: 17px;
+    color: $colorDateGrey;
+    background-image: url("../images/calendar_grey.svg");
+    background-repeat: no-repeat;
+    background-position: left center;
+  }
+  &__date-2 {
+    margin-bottom: 2px;
+    color: $colorWhite;
+    background-image: url("../images/calendar_white.svg");
+  }
+  &__wrapper {
+    position: absolute;
+    top: 0;
+    left: 0;
+    display: flex;
+    flex-direction: column;
+    padding: 22px 7px 30px 30px;
+    height: 100%;
+    color: $colorWhite;
+  }
+  &__heading-2 {
+    margin: 0;
+    margin-bottom: 6px;
+    max-width: 292px;
+    font-family: "TTFirsNeue";
+    font-weight: bold;
+    font-size: 24px;
+    line-height: 24px;
+  }
+}
+
+.card-4__img,
+.card-5__img {
+  height: 100%;
+}

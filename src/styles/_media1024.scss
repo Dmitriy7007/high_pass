@@ -1,0 +1,128 @@
+@import "_variables.scss";
+
+@media (max-width: 1024px) {
+  .container {
+    padding-left: 31px;
+    padding-right: 31px;
+    max-width: 1024px;
+  }
+
+  .header-nav {
+    padding-right: 30px;
+  }
+
+  .logo__text {
+    font-size: 27px;
+  }
+
+  .header {
+    .social__list {
+      display: none;
+    }
+    &__search {
+      display: block;
+    }
+  }
+
+  .section-hero {
+    &__descr {
+      bottom: 60px;
+      padding-left: 30px;
+    }
+    &__descr-mini {
+      margin-bottom: 8px;
+    }
+    &__descr-name {
+      font-size: 34px;
+      line-height: 34px;
+    }
+    &__heading {
+      display: -webkit-box;
+      overflow: hidden;
+      min-height: 50px;
+      white-space: normal;
+      -webkit-line-clamp: 2;
+      -webkit-box-orient: vertical;
+    }
+    &__category {
+      top: 15px;
+    }
+  }
+
+  .section-hero-grid__img-1 {
+    max-height: 623px;
+  }
+
+  .section-about {
+    padding-bottom: 83px;
+    &__img {
+      margin-bottom: 16px;
+      height: 332px;
+    }
+    &__form div {
+      flex-direction: column;
+    }
+    &__input {
+      margin-bottom: 20px;
+      max-width: 342px;
+    }
+    &__btn {
+      margin-left: 0;
+      margin-right: auto;
+    }
+  }
+
+  .card {
+    &__img {
+      width: 100%;
+      object-fit: cover;
+    }
+    &__descr {
+      padding-right: 30px;
+    }
+    &__hashtag {
+      top: 4px;
+      right: 8px;
+    }
+    &__wrapper {
+      padding: 28px 7px 38px 30px;
+    }
+  }
+
+  .section-projects__card:nth-child(-n + 3) .card__descr {
+    margin-bottom: 16px;
+    -webkit-line-clamp: 2;
+  }
+
+  .section-projects__link {
+    width: 100%;
+  }
+
+  .section-contacts {
+    &__contain {
+      top: auto;
+      padding: 25px 30px 21px 30px;
+      width: 100%;
+      max-width: 100%;
+    }
+    &__contain-wrapper {
+      max-width: 296px;
+    }
+    &__contain-tel {
+      display: inline-block;
+    }
+  }
+
+  use.telephone-icon {
+    fill: $colorOrange;
+  }
+
+  .section-contacts__link-tel {
+    color: $colorOrange;
+  }
+
+  .footer__text {
+    padding-right: 0;
+    width: 361px;
+  }
+}

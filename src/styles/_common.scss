@@ -1,0 +1,196 @@
+@import "_variables.scss";
+
+html {
+  box-sizing: border-box;
+}
+
+* {
+  box-sizing: inherit;
+}
+
+body {
+  font-family: "Roboto", sans-serif;
+  font-size: 16px;
+  font-weight: normal;
+  font-style: normal;
+}
+
+a {
+  color: inherit;
+  text-decoration: none;
+}
+
+img {
+  max-width: 100%;
+}
+
+*:focus,
+input,
+select {
+  outline: none;
+}
+
+.container {
+  margin-left: auto;
+  margin-right: auto;
+  padding-left: 15px;
+  padding-right: 15px;
+  max-width: 1320px;
+}
+
+.flex {
+  display: flex;
+  align-items: center;
+}
+
+.btn-reset {
+  padding: 0;
+  border: none;
+  background: 0 0;
+  cursor: pointer;
+}
+
+.logo div {
+  transition: color 0.3s ease-in-out;
+}
+
+.logo:focus div {
+  color: $colorOrange;
+}
+
+use.ic-1,
+use.ic-2,
+use.ic-3 {
+  fill: #cacaca;
+  transition: fill 0.3s ease-in-out;
+}
+
+use.telephone-icon {
+  fill: #fff;
+  transition: fill 0.3s ease-in-out;
+}
+
+a:hover use.ic-1,
+a:hover use.ic-2,
+a:hover use.ic-3 {
+  fill: $colorOrange;
+}
+
+a:active use.ic-1,
+a:active use.ic-2,
+a:active use.ic-3 {
+  fill: $colorActive;
+}
+
+a:focus use.ic-1,
+a:focus use.ic-2,
+a:focus use.ic-3 {
+  fill: $colorFocus;
+}
+
+a:focus use.telephone-icon {
+  fill: $colorFocus;
+}
+
+#vk,
+#insta,
+#fb,
+#telephone,
+#vk path,
+#insta path,
+#fb path,
+#telephone path {
+  fill: inherit;
+}
+
+.section-hero__descr-btn,
+.section-about__btn,
+.section-contacts__form-btn,
+.section-projects__btn {
+  transition: background-color 0.3s ease-in-out, border-color 0.3s ease-in-out;
+}
+
+.section-hero__descr-btn:focus,
+.section-about__btn:focus,
+.section-contacts__form-btn:focus {
+  border-color: $colorActive;
+}
+
+.section-hero__descr-btn:hover,
+.section-about__btn:hover,
+.section-contacts__form-btn:hover {
+  background-color: $colorFocus;
+  border-color: $colorFocus;
+}
+
+.section-hero__descr-btn:active,
+.section-about__btn:active,
+.section-contacts__form-btn:active {
+  background-color: $colorActive;
+  border-color: $colorActive;
+}
+
+.section-projects__btn:focus {
+  background-color: $colorFocus;
+}
+
+.section-projects__btn:hover {
+  background-color: $colorOrange;
+}
+
+.section-projects__btn:active {
+  background-color: $colorActive;
+  border-color: $colorActive;
+}
+
+a,
+input,
+label {
+  transition: color 0.3s ease-in-out, outline 0.3s ease-in-out;
+}
+
+.section-about__input:hover::placeholder {
+  color: $colorOrange;
+}
+
+.section-about__input:focus {
+  outline: 1px solid #ff6e30;
+}
+
+.section-about__input:hover {
+  outline: none;
+}
+
+.section-hero__category:focus,
+.link__hashtag:focus {
+  outline: 1px solid $colorFocus;
+}
+
+.section-about__label:focus,
+.section-contacts__link-tel:focus {
+  color: $colorFocus;
+}
+
+.section-projects__link:focus {
+  outline: 1px solid $colorFocus;
+}
+
+.section-projects__link {
+  height: 184px;
+  display: inline-block;
+}
+
+.section-contacts__form input:hover::placeholder,
+.section-contacts__form textarea:hover::placeholder {
+  color: $colorOrange;
+}
+
+.section-contacts__form input:focus,
+.section-contacts__form textarea:focus {
+  outline: 1px solid #ff6e30;
+}
+
+.section-contacts__form input:hover,
+.section-contacts__form textarea:hover {
+  outline: none;
+}

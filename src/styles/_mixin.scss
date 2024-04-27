@@ -1,0 +1,49 @@
+@import "_variables.scss";
+
+@mixin listStyle {
+  list-style: none;
+  padding: 0;
+  margin: 0;
+}
+
+@mixin cardDate {
+  font-size: 12px;
+  line-height: 22px;
+}
+
+@mixin hashCategory {
+  position: absolute;
+  top: 7px;
+  right: 7px;
+  font-size: 14px;
+  line-height: 16px;
+  padding: 7px 14px;
+  background-color: $colorCategory;
+  color: $colorWhite;
+  z-index: 10;
+}
+
+@mixin btnOrange {
+  font-weight: bold;
+  line-height: 16px;
+  border: 3px solid $colorOrange;
+  padding: 14px 19px;
+  background-color: $colorOrange;
+  color: $colorWhite;
+}
+
+@mixin btnFrameOrange {
+  font-weight: bold;
+  line-height: 16px;
+  padding: 15px 20px;
+  border: 3px solid $colorOrange;
+  color: $colorWhite;
+}
+
+@mixin headingDark {
+  margin: 0;
+  font-size: 24px;
+  font-family: TTFirsNeue;
+  line-height: 25px;
+  margin-bottom: 25px;
+}
